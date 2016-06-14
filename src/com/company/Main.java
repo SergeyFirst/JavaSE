@@ -47,6 +47,7 @@ public class Main {
             System.out.printf("Имя: %s, Фамилия: %s\n", user.firstName, user.lastName);
         }
 
+        //Создание, заполнение и печать заказа
         Order order = OrderManager.createOrder();
         order.user = UserManager.findUser("Сидор","Сидоров");
         order.addItemListOfBook(BookManager.findBook("Война и мир", "Лев Толстой"), 1);
